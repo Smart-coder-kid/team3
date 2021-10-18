@@ -4,11 +4,9 @@ import os
 cam = cv2.VideoCapture(0)
 cam.set(3, 640) #video width
 cam.set(4, 480) #video height
-
 face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 face_id = input('\n Enter User ID: ')
 print("\n Initializing face capture! Wait!!...")
-
 count = 0
 while(True):
     ret, img = cam.read()
